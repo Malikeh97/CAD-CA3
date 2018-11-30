@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "Y:/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_dp.xst" -ofn "Y:/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_dp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 neuron_dp.ngc neuron_dp.ngd  
