@@ -30,13 +30,31 @@ use ieee.numeric_std.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+
 entity select_input is
-	port();
+	port( inputs: std_logic_vector;
+			weights: std_logic_vector;
+			clk, rst, sel: std_logic;
+			sel_in: out std_logic_vector;
+			sel_w: out std_logic_vector;
+			x: out std_logic_vector);
 end select_input;
 
 architecture behavioral of select_input is
-begin
-
+ process(clk, rst) 
+  begin 
+    if (rst = '1') then  
+		sel_in <= ((inputs(0))'length-1 downto 0 => '0');
+		sel_w <= ((weights(0))'length-1 downto 0 => '0');
+		x <= 0;
+    elsif rising_edge(clk) then	
+		if (sel = '1')
+			sel_in <= inputs[to_integer(unsigned(x))];
+			sel_w <= weights[to_integer(unsigned(x))];
+			x <= std_logic_vector(to_integer(unsigned(x)) + 1);
+		end if
+    end if;
+  end process;
 end behavioral;
 
 

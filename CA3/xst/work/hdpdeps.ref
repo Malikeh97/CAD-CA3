@@ -1,4 +1,4 @@
-V3 15
+V3 23
 FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/accumulator.vhd 2018/11/30.22:23:10 P.20131013
 EN work/accumulator 1543603993 \
       FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/accumulator.vhd \
@@ -6,6 +6,16 @@ EN work/accumulator 1543603993 \
 AR work/accumulator/behavioral 1543603994 \
       FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/accumulator.vhd \
       EN work/accumulator 1543603993
+FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/activation.vhd 2018/12/01.00:59:30 P.20131013
+AR work/activation/behavioral 1543613381 \
+      FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/activation.vhd \
+      EN work/activation 1543613380
+EN work/activation_function 0 \
+      FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/activation.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/activation_function/behavioral 0 \
+      FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/activation.vhd \
+      EN work/activation_function 0
 FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/adder.vhd 2018/11/30.20:03:54 P.20131013
 EN work/adder 1543595648 \
       FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/adder.vhd \
@@ -13,13 +23,13 @@ EN work/adder 1543595648 \
 AR work/adder/behavioral 1543595649 \
       FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/adder.vhd \
       EN work/adder 1543595648
-FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/multiplier.vhd 2018/11/30.20:19:32 P.20131013
-EN work/multiplier 1543596574 \
+FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/multiplier.vhd 2018/11/30.23:54:12 P.20131013
+EN work/multiplier 1543609454 \
       FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/multiplier.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/multiplier/behavioral 1543596575 \
+AR work/multiplier/behavioral 1543609455 \
       FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/multiplier.vhd \
-      EN work/multiplier 1543596574
+      EN work/multiplier 1543609454
 FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_controlle.vhd 2018/11/30.22:45:45 P.20131013
 EN work/neuron_controller 1543605349 \
       FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_controlle.vhd \
@@ -34,3 +44,10 @@ EN work/neuron_dp 1543602757 \
 AR work/neuron_dp/Behavioral 1543602758 \
       FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_dp.vhd \
       EN work/neuron_dp 1543602757
+FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd 2018/11/30.23:41:06 P.20131013
+EN work/select_input 0 \
+      FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/select_input/behavioral 0 \
+      FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd \
+      EN work/select_input 0

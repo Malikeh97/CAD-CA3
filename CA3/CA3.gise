@@ -27,6 +27,12 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="accumulator.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="accumulator.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="accumulator.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="activation.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="activation.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="activation.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="activation_function.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="activation_function.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="activation_function.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="adder.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="adder.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="adder.xst"/>
@@ -39,6 +45,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="neuron_dp.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="neuron_dp.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="neuron_dp.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="select_input.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="select_input.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="select_input.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
