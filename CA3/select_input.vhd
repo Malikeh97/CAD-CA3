@@ -32,29 +32,37 @@ use ieee.numeric_std.all;
 
 
 entity select_input is
-	port( inputs: std_logic_vector;
-			weights: std_logic_vector;
+   generic (
+	 in_num : integer := 10;       
+    in_len : integer := 8;
+	 w_len : integer := 8
+    );
+	port( inputs: in std_logic_vector(in_len*in_num-1 downto 0);
+			weights: in std_logic_vector(w_len*in_num-1 downto 0);
 			clk, rst, sel: std_logic;
-			sel_in: out std_logic_vector;
-			sel_w: out std_logic_vector;
-			x: out std_logic_vector);
-end select_input;
+			sel_in: out std_logic_vector(in_len-1 downto 0);
+			sel_w: out std_logic_vector(w_len-1 downto 0);
+			x: out std_logic_vector(in_num-1 downto 0));
+end select_input; 
 
 architecture behavioral of select_input is
+signal count : std_logic_vector (in_len-1 downto 0);
+begin
  process(clk, rst) 
   begin 
     if (rst = '1') then  
-		sel_in <= ((inputs(0))'length-1 downto 0 => '0');
-		sel_w <= ((weights(0))'length-1 downto 0 => '0');
-		x <= 0;
+		sel_in <= (in_len-1 downto 0 => '0');
+		sel_w <= (w_len-1 downto 0 => '0');
+		count <= (in_len-1 downto 0 => '0');
     elsif rising_edge(clk) then	
-		if (sel = '1')
-			sel_in <= inputs[to_integer(unsigned(x))];
-			sel_w <= weights[to_integer(unsigned(x))];
-			x <= std_logic_vector(to_integer(unsigned(x)) + 1);
-		end if
+		if (sel = '1') then
+			sel_in <= inputs(((1+to_integer(unsigned(x)))*in_len-1) downto (to_integer(unsigned(x))*in_len));
+			sel_w <= weights(((1+to_integer(unsigned(x)))*w_len-1) downto (to_integer(unsigned(x))*w_len));
+			count <= count + '1';
+		end if;
     end if;
   end process;
+  x <= count;
 end behavioral;
 
 
