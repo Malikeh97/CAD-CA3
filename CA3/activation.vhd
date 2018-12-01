@@ -39,7 +39,10 @@ end activation_function;
 
 architecture behavioral of activation_function is
 	signal n: integer := a'length;
-	signal const: signed(n-1 downto 0) := (n-3 => '1', others => '0');
+	signal const1: signed(1 downto 0) := (1 downto 0 => '0');
+	signal const2: signed (0 downto 0) := (0 downto 0 => '0');
+	signal const3: signed(n-4 downto 0) := (n-4 downto 0 => '0');
+	signal const: signed(n-1 downto 0) := (const1 & const2 & const3);
 begin
 	process(inclk, inrst)
 	begin
@@ -49,7 +52,7 @@ begin
 			if signed(a) > const then
 				res <= a;
 			else
-				res <= (others => '0');
+				res <= (res'length-1 downto 0 => '0');
 			end if;
 		end if;
 	end process;

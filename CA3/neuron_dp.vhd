@@ -79,13 +79,13 @@ architecture behavioral of neuron_dp is
 	for all : select_input use entity work.select_input(behavioral);
 	for all : multiplier use entity work.multiplier(behavioral) ;
 	for all : adder use entity work.adder(behavioral);
-	for all : accumulator use entity work.accumulator(behavioral);
+	for all : accumulator use entity work.accumulator(behavioral); 
 	for all : activation_function use entity work.activation_function(behavioral);
 	
 	signal sel_in: std_logic_vector(in_len-1 downto 0);
 	signal sel_w:  std_logic_vector(w_len-1 downto 0);
-	signal mult_result:  std_logic_vector;
-	signal add_result, acc_result:  std_logic_vector;
+	signal mult_result:  std_logic_vector(in_len-1 downto 0);
+	signal add_result, acc_result:  std_logic_vector(in_len-1 downto 0);
    signal   add_ov:  std_logic;
 begin
 	input_selection: select_input port map(inputs, weights, clk, rst, sel, sel_in, sel_w, x);

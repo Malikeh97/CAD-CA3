@@ -1,5 +1,5 @@
 set -tmpdir "Y:/Documents/UNI/CAD/CA3/CA3/xst/projnav.tmp"
 set -xsthdpdir "Y:/Documents/UNI/CAD/CA3/CA3/xst"
 elaborate
--ifn neuron_dp.prj
+-ifn neuron.prj
 -ifmt mixed

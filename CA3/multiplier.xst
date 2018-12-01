@@ -1,5 +1,5 @@
-set -tmpdir "Y:/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/xst/projnav.tmp"
-set -xsthdpdir "Y:/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/xst"
+set -tmpdir "Y:/Documents/UNI/CAD/CA3/CA3/xst/projnav.tmp"
+set -xsthdpdir "Y:/Documents/UNI/CAD/CA3/CA3/xst"
 elaborate
 -ifn multiplier.prj
 -ifmt mixed

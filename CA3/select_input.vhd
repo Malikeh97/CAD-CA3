@@ -43,7 +43,7 @@ entity select_input is
 			sel_in: out std_logic_vector(in_len-1 downto 0);
 			sel_w: out std_logic_vector(w_len-1 downto 0);
 			x: out std_logic_vector(in_num-1 downto 0));
-end select_input; 
+end select_input;
 
 architecture behavioral of select_input is
 signal count : std_logic_vector (in_len-1 downto 0);
@@ -56,9 +56,9 @@ begin
 		count <= (in_len-1 downto 0 => '0');
     elsif rising_edge(clk) then	
 		if (sel = '1') then
-			sel_in <= inputs(((1+to_integer(unsigned(x)))*in_len-1) downto (to_integer(unsigned(x))*in_len));
-			sel_w <= weights(((1+to_integer(unsigned(x)))*w_len-1) downto (to_integer(unsigned(x))*w_len));
-			count <= count + '1';
+			sel_in <= inputs(((1+to_integer(unsigned(count)))*in_len-1) downto (to_integer(unsigned(count))*in_len));
+			sel_w <= weights(((1+to_integer(unsigned(count)))*w_len-1) downto (to_integer(unsigned(count))*w_len));
+			count <= std_logic_vector(unsigned(count) + 1);
 		end if;
     end if;
   end process;

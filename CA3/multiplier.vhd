@@ -41,5 +41,5 @@ architecture behavioral of multiplier is
 	signal tmp: signed(m+n-1 downto 0);
 begin
 	tmp <= signed(a_in) * signed(b_in);
-	mult_result <=  std_logic_vector(tmp(n-1 downto 0)) when (m<n) else std_logic_vector(tmp(m-1 downto 0));
+	mult_result <=  std_logic_vector(tmp(n-1 downto 0));
 end behavioral;
