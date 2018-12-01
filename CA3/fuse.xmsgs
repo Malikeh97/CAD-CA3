@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="190" delta="unknown" >"Y:/Documents/UNI/CAD/CA3/CA3/neuron_tb.vhd" Line 72: Actual expression for generic <arg fmt="%s" index="1">input_num</arg> cannot reference a signal
+</msg>
+
 </messages>
 

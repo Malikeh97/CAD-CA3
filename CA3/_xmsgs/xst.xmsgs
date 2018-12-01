@@ -5,10 +5,25 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="Xst" num="2588" delta="new" >Port &lt;<arg fmt="%s" index="1">inputs</arg>&gt; of top <arg fmt="%s" index="2">entity</arg> &lt;<arg fmt="%s" index="3">neuron</arg>&gt; is not constrainted.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">//mac/home/Documents/UNI/CAD/CA3/CA3/select_input.vhd</arg>&quot; line <arg fmt="%d" index="2">53</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">sel_in</arg>&gt; has a width of <arg fmt="%d" index="4">16</arg> bits but assigned expression is <arg fmt="%d" index="5">48</arg>-bit wide.
 </msg>
 
-<msg type="error" file="Xst" num="2588" delta="new" >Port &lt;<arg fmt="%s" index="1">weights</arg>&gt; of top <arg fmt="%s" index="2">entity</arg> &lt;<arg fmt="%s" index="3">neuron</arg>&gt; is not constrainted.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">//mac/home/Documents/UNI/CAD/CA3/CA3/select_input.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">sel_w</arg>&gt; has a width of <arg fmt="%d" index="4">16</arg> bits but assigned expression is <arg fmt="%d" index="5">48</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">tmp&lt;31:30&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">tmp&lt;13:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">const</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0010000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">add_ov</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">n</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000011</arg>.
 </msg>
 
 </messages>

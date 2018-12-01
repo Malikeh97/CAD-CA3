@@ -2,9 +2,9 @@ Command line:
    neuron_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  54763
+     -socket  54789
 
-Sat Dec 01 22:07:32 2018
+Sat Dec 01 22:25:46 2018
 
 
  Elaboration Time: 0.09375 sec

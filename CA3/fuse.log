@@ -12,6 +12,7 @@ Parsing VHDL file "Y:/Documents/UNI/CAD/CA3/CA3/neuron_dp.vhd" into library work
 Parsing VHDL file "Y:/Documents/UNI/CAD/CA3/CA3/neuron_controlle.vhd" into library work
 Parsing VHDL file "Y:/Documents/UNI/CAD/CA3/CA3/neuron.vhd" into library work
 Parsing VHDL file "Y:/Documents/UNI/CAD/CA3/CA3/neuron_tb.vhd" into library work
+WARNING:HDLCompiler:190 - "Y:/Documents/UNI/CAD/CA3/CA3/neuron_tb.vhd" Line 72: Actual expression for generic input_num cannot reference a signal
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -24,11 +25,11 @@ Compiling architecture behavioral of entity adder [adder_default]
 Compiling architecture behavioral of entity accumulator [accumulator_default]
 Compiling architecture behavioral of entity activation_function [activation_function_default]
 Compiling architecture behavioral of entity neuron_dp [\neuron_dp(47,0,47,0,15,0)\]
-Compiling architecture behavioral of entity neuron [\neuron(47,0,47,0)\]
+Compiling architecture behavioral of entity neuron [\neuron(3)\]
 Compiling architecture behavior of entity neuron_tb
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 20 VHDL Units
 Built simulation executable Y:/Documents/UNI/CAD/CA3/CA3/neuron_tb_isim_beh.exe
-Fuse Memory Usage: 35260 KB
-Fuse CPU Usage: 640 ms
+Fuse Memory Usage: 35264 KB
+Fuse CPU Usage: 656 ms

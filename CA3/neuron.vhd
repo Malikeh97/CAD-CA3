@@ -31,12 +31,13 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity neuron is
+	generic (input_num : integer := 3);
 	port (
-		clk: in std_logic;
+		clk: in std_logic; 
 		rst: in std_logic;
 		start: in std_logic;
-		inputs: in std_logic_vector;
-		weights: in std_logic_vector;
+		inputs: in std_logic_vector(input_num * 16 - 1 downto 0);
+		weights: in std_logic_vector(input_num * 16 - 1 downto 0);
 		done: out std_logic;
 		res: out std_logic_vector(15 downto 0));
 end neuron;
@@ -63,7 +64,7 @@ architecture Behavioral of neuron is
 	signal sel_in: std_logic; 
 	signal ld_en: std_logic;
 	signal ready: std_logic;
-	signal n : std_logic_vector(15 downto 0) := std_logic_vector(to_unsigned(inputs'length / 16, 16));
+	signal n : std_logic_vector(15 downto 0) := std_logic_vector(to_unsigned(input_num, 16));
 begin
 	m1: ctrl port map(start => start, clk => clk, rst => rst, x => counter, n => n, sel_in => sel_in, ld_en => ld_en, ready => ready, done => done);
 	

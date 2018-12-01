@@ -39,6 +39,7 @@ ARCHITECTURE behavior OF neuron_tb IS
  
     -- Component Declaration for the Unit Under Test (UUT)
     COMPONENT neuron
+		generic(input_num : integer);
 		PORT(
          clk : IN  std_logic;
          rst : IN  std_logic;
@@ -49,12 +50,14 @@ ARCHITECTURE behavior OF neuron_tb IS
          res : OUT  std_logic_vector(15 downto 0));
     END COMPONENT;
 
+	signal input_num : integer := 3;
+
    --Inputs
    signal clk : std_logic := '0';
    signal rst : std_logic := '0';
    signal start : std_logic := '0';
-   signal inputs : std_logic_vector(47 downto 0) := (others => '0');
-   signal weights : std_logic_vector(47 downto 0) := (others => '0');
+   signal inputs  : std_logic_vector(input_num * 16 - 1 downto 0) := (others => '0');
+   signal weights : std_logic_vector(input_num * 16 - 1 downto 0) := (others => '0');
 
  	--Outputs
    signal done : std_logic;
@@ -66,7 +69,8 @@ ARCHITECTURE behavior OF neuron_tb IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: neuron PORT MAP (clk => clk,
+   uut: neuron generic map (input_num => input_num)
+			PORT MAP (clk => clk,
 							 rst => rst,
 							 start => start,
 							 inputs => inputs,
