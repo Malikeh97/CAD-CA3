@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to Y:/Documents/UNI/CAD/CA3/CA3/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -18,15 +18,16 @@ Total CPU time to Xst completion: 0.12 secs
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "//mac/home/Documents/UNI/CAD/CA3/CA3/select_input.vhd" in Library work.
-Architecture behavioral of Entity select_input is up to date.
+Entity <select_input> compiled.
+Entity <select_input> (Architecture <behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> 
 
-Total memory usage is 4489812 kilobytes
+Total memory usage is 4489772 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

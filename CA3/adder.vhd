@@ -31,17 +31,16 @@ use ieee.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity adder is
-	port(in1, in2: in std_logic_vector;
-		  add_result: out std_logic_vector;
+	port(in1, in2: in std_logic_vector(15 downto 0);
+		  add_result: out std_logic_vector(15 downto 0);
 		  add_ov: out std_logic);
 end adder;
 
 architecture behavioral of adder is
-   signal n: integer := in1'length;
-	signal tmp: signed(n downto 0);
+	signal tmp: signed(16 downto 0);
 begin
 	tmp <= signed( in1(in1'left) & in1) + signed( in2(in2'left) & in2 );
-	add_ov <= tmp(n);
-	add_result <= std_logic_vector(tmp(n-1 downto 0));
+	add_ov <= tmp(16);
+	add_result <= std_logic_vector(tmp(15 downto 0));
 end behavioral;
 

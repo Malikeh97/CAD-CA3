@@ -6,58 +6,58 @@ FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/multiplier.vhd 2018/11/
 FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_controlle.vhd 2018/11/30.22:45:45 P.20131013
 FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_dp.vhd 2018/12/01.13:44:02 P.20131013
 FL //mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd 2018/11/30.23:41:06 P.20131013
-FL //mac/home/Documents/UNI/CAD/CA3/CA3/accumulator.vhd 2018/11/30.23:13:42 P.20131013
-EN work/accumulator 1543669345 \
+FL //mac/home/Documents/UNI/CAD/CA3/CA3/accumulator.vhd 2018/12/01.20:11:29 P.20131013
+EN work/accumulator 1543684420 \
       FL //mac/home/Documents/UNI/CAD/CA3/CA3/accumulator.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/accumulator/behavioral 1543669346 \
-      FL //mac/home/Documents/UNI/CAD/CA3/CA3/accumulator.vhd EN work/accumulator 1543669345
-FL //mac/home/Documents/UNI/CAD/CA3/CA3/activation.vhd 2018/12/01.16:20:02 P.20131013
-EN work/activation_function 1543669324 \
+AR work/accumulator/behavioral 1543684421 \
+      FL //mac/home/Documents/UNI/CAD/CA3/CA3/accumulator.vhd EN work/accumulator 1543684420
+FL //mac/home/Documents/UNI/CAD/CA3/CA3/activation.vhd 2018/12/01.20:06:08 P.20131013
+EN work/activation_function 1543684422 \
       FL //mac/home/Documents/UNI/CAD/CA3/CA3/activation.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/activation_function/behavioral 1543669325 \
+AR work/activation_function/behavioral 1543684423 \
       FL //mac/home/Documents/UNI/CAD/CA3/CA3/activation.vhd \
-      EN work/activation_function 1543669324
-FL //mac/home/Documents/UNI/CAD/CA3/CA3/adder.vhd 2018/11/30.23:48:45 P.20131013
-EN work/adder 1543669338 FL //mac/home/Documents/UNI/CAD/CA3/CA3/adder.vhd \
+      EN work/activation_function 1543684422
+FL //mac/home/Documents/UNI/CAD/CA3/CA3/adder.vhd 2018/12/01.18:19:30 P.20131013
+EN work/adder 1543684418 FL //mac/home/Documents/UNI/CAD/CA3/CA3/adder.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/adder/behavioral 1543669339 \
-      FL //mac/home/Documents/UNI/CAD/CA3/CA3/adder.vhd EN work/adder 1543669338
-FL //mac/home/Documents/UNI/CAD/CA3/CA3/multiplier.vhd 2018/12/01.16:30:13 P.20131013
-EN work/multiplier 1543669318 \
+AR work/adder/behavioral 1543684419 \
+      FL //mac/home/Documents/UNI/CAD/CA3/CA3/adder.vhd EN work/adder 1543684418
+FL //mac/home/Documents/UNI/CAD/CA3/CA3/multiplier.vhd 2018/12/01.19:51:05 P.20131013
+EN work/multiplier 1543684416 \
       FL //mac/home/Documents/UNI/CAD/CA3/CA3/multiplier.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/multiplier/behavioral 1543669319 \
-      FL //mac/home/Documents/UNI/CAD/CA3/CA3/multiplier.vhd EN work/multiplier 1543669318
-FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron.vhd 2018/12/01.16:31:53 P.20131013
-EN work/neuron 1543669330 FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron.vhd \
+AR work/multiplier/behavioral 1543684417 \
+      FL //mac/home/Documents/UNI/CAD/CA3/CA3/multiplier.vhd EN work/multiplier 1543684416
+FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron.vhd 2018/12/01.20:43:31 P.20131013
+EN work/neuron 1543684428 FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/neuron/Behavioral 1543669331 \
-      FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron.vhd EN work/neuron 1543669330 \
-      AR work/neuron_controller/behavioral 1543669323 \
-      AR work/neuron_dp/Behavioral 1543669329 CP ctrl CP dp
-FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron_controlle.vhd 2018/11/30.23:13:42 P.20131013
-EN work/neuron_controller 1543669322 \
+AR work/neuron/Behavioral 1543684429 \
+      FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron.vhd EN work/neuron 1543684428 \
+      AR work/neuron_controller/behavioral 1543684425 \
+      AR work/neuron_dp/Behavioral 1543684427 CP ctrl CP dp
+FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron_controlle.vhd 2018/12/01.20:17:49 P.20131013
+EN work/neuron_controller 1543684424 \
       FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron_controlle.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/neuron_controller/behavioral 1543669323 \
+AR work/neuron_controller/behavioral 1543684425 \
       FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron_controlle.vhd \
-      EN work/neuron_controller 1543669322
-FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron_dp.vhd 2018/12/01.16:29:10 P.20131013
-EN work/neuron_dp 1543669328 \
+      EN work/neuron_controller 1543684424
+FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron_dp.vhd 2018/12/01.20:11:47 P.20131013
+EN work/neuron_dp 1543684426 \
       FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron_dp.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/neuron_dp/Behavioral 1543669329 \
-      FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron_dp.vhd EN work/neuron_dp 1543669328 \
-      AR work/select_input/behavioral 1543669330 AR work/multiplier/behavioral 1543669319 \
-      AR work/adder/behavioral 1543669339 AR work/accumulator/behavioral 1543669346 \
-      AR work/activation_function/behavioral 1543669325 CP select_input \
+AR work/neuron_dp/Behavioral 1543684427 \
+      FL //mac/home/Documents/UNI/CAD/CA3/CA3/neuron_dp.vhd EN work/neuron_dp 1543684426 \
+      AR work/select_input/behavioral 1543684415 AR work/multiplier/behavioral 1543684417 \
+      AR work/adder/behavioral 1543684419 AR work/accumulator/behavioral 1543684421 \
+      AR work/activation_function/behavioral 1543684423 CP select_input \
       CP multiplier CP adder CP accumulator CP activation_function
-FL //mac/home/Documents/UNI/CAD/CA3/CA3/select_input.vhd 2018/12/01.14:21:33 P.20131013
-EN work/select_input 1543669329 \
+FL //mac/home/Documents/UNI/CAD/CA3/CA3/select_input.vhd 2018/12/01.20:42:46 P.20131013
+EN work/select_input 1543684414 \
       FL //mac/home/Documents/UNI/CAD/CA3/CA3/select_input.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/select_input/behavioral 1543669330 \
+AR work/select_input/behavioral 1543684415 \
       FL //mac/home/Documents/UNI/CAD/CA3/CA3/select_input.vhd \
-      EN work/select_input 1543669329
+      EN work/select_input 1543684414

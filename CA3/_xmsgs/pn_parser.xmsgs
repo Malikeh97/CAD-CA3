@@ -8,31 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/Documents/UNI/CAD/CA3/CA3/MAC.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/Documents/UNI/CAD/CA3/CA3/accumulator.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/Documents/UNI/CAD/CA3/CA3/activation.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/Documents/UNI/CAD/CA3/CA3/adder.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/Documents/UNI/CAD/CA3/CA3/multiplier.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/Documents/UNI/CAD/CA3/CA3/neuron.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/Documents/UNI/CAD/CA3/CA3/neuron_controlle.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/Documents/UNI/CAD/CA3/CA3/neuron_dp.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Y:/Documents/UNI/CAD/CA3/CA3/select_input.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

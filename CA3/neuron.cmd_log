@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "Y:/Documents/UNI/CAD/CA3/CA3/neuron.xst" -ofn "Y:/Documents/UNI/CAD/CA3/CA3/neuron.syr" 

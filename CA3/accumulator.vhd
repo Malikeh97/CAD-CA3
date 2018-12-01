@@ -30,8 +30,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity accumulator is
-	port(add_out: in std_logic_vector;
-		  acc_result: out std_logic_vector;
+	port(add_out: in std_logic_vector(15 downto 0);
+			ld_en : in std_logic;
+		  acc_result: out std_logic_vector(15 downto 0);
 		  inclk, inrst: in std_logic);
 end accumulator;
 
@@ -40,8 +41,8 @@ begin
 	process(inclk, inrst)
 	begin
 		if inrst = '1' then
-			acc_result <= (acc_result'length-1 downto 0 => '0');
-		elsif rising_edge(inclk) then
+			acc_result <= (15 downto 0 => '0');
+		elsif rising_edge(inclk) and ld_en = '1' then
 			acc_result <= add_out;
 		end if;
 	end process;

@@ -33,7 +33,7 @@ use ieee.numeric_std.all;
 entity neuron_controller is
 	port(start, clk, rst: in std_logic;
 		  x, n: in std_logic_vector;
-		  sel_in, ready, done: out std_logic);
+		  sel_in, ld_en, ready, done: out std_logic);
 end neuron_controller;
 
 architecture behavioral of  neuron_controller is
@@ -42,15 +42,16 @@ architecture behavioral of  neuron_controller is
 begin 
   process(clk, rst) 
   begin 
-    sel_in <= '0';
-	 ready <= '0';
-	 done <= '0';
     if (rst = '1') then           
 		state <= initial_state;
-    elsif rising_edge(clk) then   
+    elsif rising_edge(clk) then  
+		 sel_in <= '0';
+		 ready <= '0';
+		 done <= '0';
+		 ld_en <= '0';
 		case state is
 			when initial_state => 
-				if start='1' then 
+				if start = '1' then 
 					state <= select_input; 	
 				else
 					state <= initial_state;
@@ -58,16 +59,19 @@ begin
 			when select_input => 
 				sel_in <= '1';
 				state <= accumulation;
-			when accumulation => 
-				if x<n then 
+			when accumulation =>
+				ld_en <= '1';
+				if unsigned(x) < (unsigned(n) - 1) then 
 					state <= select_input; 
 				else
 					state <= activation;
 				end if; 
 			when activation => 
-				ready <= '1'; 
+				ready <= '1';
+				state <= completed;
 			when completed =>
 				done <= '1';
+				state <= initial_state;
 			when others =>
 				state <= initial_state;
 		end case; 

@@ -32,34 +32,27 @@ use ieee.numeric_std.all;
 
 
 entity select_input is
-   generic (
-	 in_num : integer := 10;       
-    in_len : integer := 8;
-	 w_len : integer := 8
-    );
-	port( inputs: in std_logic_vector(in_len*in_num-1 downto 0);
-			weights: in std_logic_vector(w_len*in_num-1 downto 0);
+	port( inputs: in std_logic_vector;
+			weights: in std_logic_vector;
 			clk, rst, sel: std_logic;
-			sel_in: out std_logic_vector(in_len-1 downto 0);
-			sel_w: out std_logic_vector(w_len-1 downto 0);
-			x: out std_logic_vector(in_num-1 downto 0));
+			sel_in: out std_logic_vector(15 downto 0);
+			sel_w: out std_logic_vector(15 downto 0);
+			x: out std_logic_vector);
 end select_input;
 
 architecture behavioral of select_input is
-signal count : std_logic_vector (in_len-1 downto 0);
+	signal count : std_logic_vector (x'length - 1 downto 0);
 begin
  process(clk, rst) 
   begin 
     if (rst = '1') then  
-		sel_in <= (in_len-1 downto 0 => '0');
-		sel_w <= (w_len-1 downto 0 => '0');
-		count <= (in_len-1 downto 0 => '0');
-    elsif rising_edge(clk) then	
-		if (sel = '1') then
-			sel_in <= inputs(((1+to_integer(unsigned(count)))*in_len-1) downto (to_integer(unsigned(count))*in_len));
-			sel_w <= weights(((1+to_integer(unsigned(count)))*w_len-1) downto (to_integer(unsigned(count))*w_len));
-			count <= std_logic_vector(unsigned(count) + 1);
-		end if;
+		sel_in <= (15 downto 0 => '0');
+		sel_w <= (15 downto 0 => '0');
+		count <= (x'length - 1 downto 0 => '0');
+    elsif rising_edge(clk) and (sel = '1') then	
+		sel_in <= inputs(((1 + to_integer(unsigned(count))) * 16 - 1) downto (to_integer(unsigned(count)) * 16));
+		sel_w <= weights(((1 + to_integer(unsigned(count))) * 16 - 1) downto (to_integer(unsigned(count)) * 16));
+		count <= std_logic_vector(unsigned(count) + 1);
     end if;
   end process;
   x <= count;

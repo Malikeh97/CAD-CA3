@@ -1,0 +1,8 @@
+work	"accumulator.vhd"
+work	"activation.vhd"
+work	"adder.vhd"
+work	"multiplier.vhd"
+work	"neuron.vhd"
+work	"neuron_controlle.vhd"
+work	"neuron_dp.vhd"
+work	"select_input.vhd"

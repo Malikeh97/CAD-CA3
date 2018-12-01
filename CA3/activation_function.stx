@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to Y:/Documents/UNI/CAD/CA3/CA3/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to Y:/Documents/UNI/CAD/CA3/CA3/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -22,12 +22,12 @@ Entity <activation_function> compiled.
 Entity <activation_function> (Architecture <behavioral>) compiled.
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> 
 
-Total memory usage is 4489800 kilobytes
+Total memory usage is 4489760 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
