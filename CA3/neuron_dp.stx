@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to Y:/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -18,17 +18,22 @@ Total CPU time to Xst completion: 0.14 secs
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_dp.vhd" in Library work.
-Architecture behavioral of Entity neuron_dp is up to date.
+Entity <neuron_dp> compiled.
+ERROR:HDLParsers:164 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_dp.vhd" Line 85. parse error, unexpected CLOSEPAR
+ERROR:HDLParsers:164 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_dp.vhd" Line 86. parse error, unexpected CLOSEPAR
+ERROR:HDLParsers:164 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_dp.vhd" Line 87. parse error, unexpected CLOSEPAR
+ERROR:HDLParsers:164 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_dp.vhd" Line 88. parse error, unexpected CLOSEPAR
+ERROR:HDLParsers:164 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/neuron_dp.vhd" Line 89. parse error, unexpected CLOSEPAR
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.23 secs
  
 --> 
 
-Total memory usage is 4489764 kilobytes
+Total memory usage is 4489788 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    5 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

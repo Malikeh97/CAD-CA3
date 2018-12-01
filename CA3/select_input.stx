@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to Y:/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -18,7 +18,12 @@ Total CPU time to Xst completion: 0.12 secs
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd" in Library work.
-ERROR:HDLParsers:164 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd" Line 34. parse error, unexpected ARRAY, expecting IDENTIFIER or STRING_LITERAL
+Entity <select_input> compiled.
+ERROR:HDLParsers:1411 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd" Line 59. Parameter x of mode out can not be associated with a formal parameter of mode in.
+ERROR:HDLParsers:1411 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd" Line 59. Parameter x of mode out can not be associated with a formal parameter of mode in.
+ERROR:HDLParsers:1411 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd" Line 60. Parameter x of mode out can not be associated with a formal parameter of mode in.
+ERROR:HDLParsers:1411 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd" Line 60. Parameter x of mode out can not be associated with a formal parameter of mode in.
+ERROR:HDLParsers:808 - "//mac/home/Desktop/malikeh/UT-Courses/CAD/CAD-CA3/CA3/select_input.vhd" Line 61. + can not have such operands in this context.
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -26,9 +31,9 @@ Total CPU time to Xst completion: 0.20 secs
  
 --> 
 
-Total memory usage is 4489756 kilobytes
+Total memory usage is 4489772 kilobytes
 
-Number of errors   :    1 (   0 filtered)
+Number of errors   :    5 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
